@@ -1,0 +1,81 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+#body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: gray;
+    position: sticky;
+    top: 5px;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 50px;
+    position: sticky;
+    top: 5px;
+}
+
+/* Header Styling */
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 500px;
+    left: 50%;
+    color: #fff;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    color: blue;
+    transition: all 300ms ease-in;
+}
+
+/* Background for Coffee and Notebook */
+body::before {
+    content: "";
+    background: url('background.jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
